@@ -20,6 +20,7 @@
   import { useI18n } from 'vue-i18n'
   import { MenuThemeEnum } from '@/enums/appEnum'
   import { useTheme } from '@/hooks/core/useTheme'
+import { ElMessage } from 'element-plus'
 
   defineOptions({ name: 'SettingActions' })
 

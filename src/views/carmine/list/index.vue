@@ -38,14 +38,16 @@
 </template>
 
 <script setup lang="ts">
+import { h } from 'vue'
 import { useTable } from '@/hooks/core/useTable'
 import { fetchGetCustomerList } from '@/api/carmine'
 import UserSearch from './modules/customer-search.vue'
 import UserDialog from './modules/customer-dialog.vue'
 import UserRenew from './modules/customer-renew.vue'
 import UserFreeze from './modules/customer-freeze.vue'
-import { ElTag, ElMessageBox, ElImage } from 'element-plus'
+import { ElTag, ElMessageBox, ElImage, ElMessage } from 'element-plus'
 import { DialogType } from '@/types'
+import { nextTick, ref } from 'vue'
 
 defineOptions({ name: 'User' })
 

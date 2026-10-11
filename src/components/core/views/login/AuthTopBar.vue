@@ -79,6 +79,7 @@
   import { languageOptions } from '@/locales'
   import { LanguageEnum } from '@/enums/appEnum'
   import AppConfig from '@/config'
+import { storeToRefs } from 'pinia'
 
   defineOptions({ name: 'AuthTopBar' })
 

@@ -25,6 +25,7 @@
   import EmojiText from '@/utils/ui/emojo'
   import { IDomEditor, IToolbarConfig, IEditorConfig } from '@wangeditor/editor'
   import request from '@/utils/http'
+import { ElMessage } from 'element-plus'
 
   defineOptions({ name: 'ArtWangEditor' })
 

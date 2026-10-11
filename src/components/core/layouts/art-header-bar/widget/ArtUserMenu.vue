@@ -66,6 +66,8 @@
   import { useUserStore } from '@/store/modules/user'
   import { WEB_LINKS } from '@/utils/constants'
   import { mittBus } from '@/utils/sys'
+import { storeToRefs } from 'pinia'
+import { ref } from 'vue'
 
   defineOptions({ name: 'ArtUserMenu' })
 

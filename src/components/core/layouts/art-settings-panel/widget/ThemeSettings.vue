@@ -20,6 +20,7 @@
   import { useSettingStore } from '@/store/modules/setting'
   import { useSettingsConfig } from '../composables/useSettingsConfig'
   import { useTheme } from '@/hooks/core/useTheme'
+import { storeToRefs } from 'pinia'
 
   const settingStore = useSettingStore()
   const { systemThemeMode } = storeToRefs(settingStore)

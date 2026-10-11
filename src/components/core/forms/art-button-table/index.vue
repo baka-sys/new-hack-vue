@@ -15,6 +15,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref,computed,nextTick,watch,onMounted,onBeforeUnmount } from 'vue'
   defineOptions({ name: 'ArtButtonTable' })
 
   interface Props {

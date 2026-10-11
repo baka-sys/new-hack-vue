@@ -183,6 +183,8 @@
   import { useCommon } from '@/hooks/core/useCommon'
   import { useHeaderBar } from '@/hooks/core/useHeaderBar'
   import ArtUserMenu from './widget/ArtUserMenu.vue'
+import { storeToRefs } from 'pinia'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
   defineOptions({ name: 'ArtHeaderBar' })
 

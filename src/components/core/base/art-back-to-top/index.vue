@@ -19,6 +19,8 @@
 </template>
 
 <script setup lang="ts">
+  import { ref,watch,onMounted } from 'vue'
+  import { useScroll } from '@vueuse/core'
   import { useCommon } from '@/hooks/core/useCommon'
 
   defineOptions({ name: 'ArtBackToTop' })

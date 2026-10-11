@@ -15,6 +15,7 @@
 <script setup lang="ts">
   import { useCommon } from '@/hooks/core/useCommon'
   import { useUserStore } from '@/store/modules/user'
+import { useRouter } from 'vue-router';
 
   const router = useRouter()
   const userStore = useUserStore()

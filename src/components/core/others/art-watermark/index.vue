@@ -20,6 +20,7 @@
 <script setup lang="ts">
   import AppConfig from '@/config'
   import { useSettingStore } from '@/store/modules/setting'
+import { storeToRefs } from 'pinia';
 
   defineOptions({ name: 'ArtWatermark' })
 

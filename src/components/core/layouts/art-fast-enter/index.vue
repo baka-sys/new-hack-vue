@@ -64,6 +64,8 @@
 <script setup lang="ts">
   import { useFastEnter } from '@/hooks/core/useFastEnter'
   import type { FastEnterApplication, FastEnterQuickLink } from '@/types/config'
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
   defineOptions({ name: 'ArtFastEnter' })
 

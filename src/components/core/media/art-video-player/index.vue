@@ -4,7 +4,8 @@
 </template>
 
 <script setup lang="ts">
-  import Player from 'xgplayer'
+  import { onBeforeUnmount, onMounted, ref } from 'vue';
+import Player from 'xgplayer'
   import 'xgplayer/dist/index.min.css'
 
   defineOptions({ name: 'ArtVideoPlayer' })

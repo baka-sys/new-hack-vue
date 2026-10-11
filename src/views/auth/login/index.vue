@@ -115,6 +115,9 @@
   import { fetchLogin } from '@/api/auth'
   import { ElNotification, type FormInstance, type FormRules } from 'element-plus'
   import { useSettingStore } from '@/store/modules/setting'
+import { storeToRefs } from 'pinia'
+import { computed, reactive, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
   defineOptions({ name: 'Login' })
 

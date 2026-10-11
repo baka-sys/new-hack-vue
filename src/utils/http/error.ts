@@ -24,6 +24,7 @@
 import { AxiosError } from 'axios'
 import { ApiStatus } from './status'
 import { $t } from '@/locales'
+import { ElMessage } from 'element-plus'
 
 // 错误响应接口
 export interface ErrorResponse {

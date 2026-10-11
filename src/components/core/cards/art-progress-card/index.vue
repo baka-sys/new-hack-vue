@@ -27,6 +27,7 @@
 </template>
 
 <script setup lang="ts">
+  import { ref,onMounted,watch } from 'vue'
   defineOptions({ name: 'ArtProgressCard' })
 
   interface Props {

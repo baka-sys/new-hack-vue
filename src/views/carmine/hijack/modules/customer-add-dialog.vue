@@ -37,8 +37,9 @@
 <script setup lang="ts">
 import { updateCustomerHijackApi } from '@/api/customer-hijack'
 import { ROLE_LIST_DATA } from '@/mock/temp/formData'
-import type { FormInstance, FormRules } from 'element-plus'
+import { ElMessage, type FormInstance, type FormRules } from 'element-plus'
 import { tr } from 'element-plus/es/locale'
+import { computed, nextTick, reactive, ref, watch } from 'vue';
 
 interface Props {
   visible: boolean

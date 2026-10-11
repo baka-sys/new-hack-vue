@@ -97,6 +97,7 @@
 </template>
 
 <script setup lang="ts">
+  import { ref,computed,nextTick,watch,onMounted,onBeforeUnmount,reactive,toRefs,useTemplateRef, VNode } from 'vue'
   import { useWindowSize } from '@vueuse/core'
   import { useI18n } from 'vue-i18n'
   import { toRaw, type Component } from 'vue'

@@ -4,6 +4,7 @@
 </template>
 
 <script setup lang="ts">
+  import { computed } from 'vue'
   import { useChartOps, useChartComponent } from '@/hooks/core/useChart'
   import { getCssVar } from '@/utils/ui'
   import { graphic, type EChartsOption } from '@/plugins/echarts'

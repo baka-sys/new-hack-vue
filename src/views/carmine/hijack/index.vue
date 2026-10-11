@@ -28,14 +28,16 @@
 </template>
 
 <script setup lang="ts">
+import { h } from 'vue'
 import ArtButtonTable from '@/components/core/forms/art-button-table/index.vue'
 import { useTable } from '@/hooks/core/useTable'
 import UserSearch from './modules/customer-search.vue'
 import UserDialog from './modules/customer-dialog.vue'
 import CustomerAddDialog from './modules/customer-add-dialog.vue'
-import { ElTag } from 'element-plus'
+import { ElMessage, ElTag } from 'element-plus'
 import { DialogType } from '@/types'
 import { selectCarmineByApi,updateSwitchCodeApi } from '@/api/customer-hijack.js'
+import { nextTick, ref } from 'vue'
 defineOptions({ name: 'User' })
 
 type UserListItem = Api.SystemManage.UserListItem

@@ -41,6 +41,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref,computed,nextTick,watch,onMounted,onBeforeUnmount,reactive,toRefs } from 'vue'
   defineOptions({ name: 'ArtDragVerify' })
 
   // 事件定义

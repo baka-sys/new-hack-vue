@@ -16,7 +16,8 @@
 
 <script setup lang="ts">
 import { batchFreezeCarmineApi} from '@/api/customer'
-import type { FormInstance, FormRules } from 'element-plus'
+import { ElMessage, type FormInstance, type FormRules } from 'element-plus'
+import { computed, reactive, ref } from 'vue';
 
 interface Props {
   visible: boolean

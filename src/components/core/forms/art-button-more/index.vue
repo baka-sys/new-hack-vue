@@ -24,6 +24,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref,computed,nextTick,watch,onMounted,onBeforeUnmount } from 'vue'
   import { useAuth } from '@/hooks/core/useAuth'
 
   defineOptions({ name: 'ArtButtonMore' })

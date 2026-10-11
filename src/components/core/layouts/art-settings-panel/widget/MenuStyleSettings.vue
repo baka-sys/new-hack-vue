@@ -25,6 +25,8 @@
   import SectionTitle from './SectionTitle.vue'
   import { MenuTypeEnum, type MenuThemeEnum } from '@/enums/appEnum'
   import { useSettingStore } from '@/store/modules/setting'
+import { storeToRefs } from 'pinia'
+import { computed } from 'vue'
 
   const menuThemeList = AppConfig.themeList
   const settingStore = useSettingStore()

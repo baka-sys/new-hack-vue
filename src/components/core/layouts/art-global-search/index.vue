@@ -102,6 +102,8 @@
   import { formatMenuTitle } from '@/utils/router'
   import { handleMenuJump } from '@/utils/navigation'
   import { type ScrollbarInstance } from 'element-plus'
+import { storeToRefs } from 'pinia'
+import { nextTick, onMounted, onUnmounted, ref } from 'vue'
 
   defineOptions({ name: 'ArtGlobalSearch' })
 

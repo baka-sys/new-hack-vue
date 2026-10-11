@@ -22,6 +22,8 @@
   import { useSettingStore } from '@/store/modules/setting'
   import { useSettingsConfig } from '../composables/useSettingsConfig'
   import { useSettingsState } from '../composables/useSettingsState'
+import { useWindowSize } from '@vueuse/core'
+import { storeToRefs } from 'pinia'
 
   const { width } = useWindowSize()
   const settingStore = useSettingStore()

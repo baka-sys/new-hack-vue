@@ -45,7 +45,8 @@
 </template>
 
 <script setup lang="ts">
-  import ImgCutter from 'vue-img-cutter'
+  import { computed, onMounted, ref, watch } from 'vue';
+import ImgCutter from 'vue-img-cutter'
 
   defineOptions({ name: 'ArtCutterImg' })
 

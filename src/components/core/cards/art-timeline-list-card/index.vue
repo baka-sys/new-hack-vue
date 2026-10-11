@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+  import { computed } from 'vue'
   defineOptions({ name: 'ArtTimelineListCard' })
 
   // 常量配置

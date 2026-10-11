@@ -93,6 +93,8 @@
   import { mittBus } from '@/utils/sys'
   import meAvatar from '@/assets/images/avatar/avatar5.webp'
   import aiAvatar from '@/assets/images/avatar/avatar10.webp'
+import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue';
+import { useWindowSize } from '@vueuse/core';
 
   defineOptions({ name: 'ArtChatWindow' })
 

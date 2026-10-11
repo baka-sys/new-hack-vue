@@ -10,6 +10,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref,computed,nextTick,watch,onMounted,onBeforeUnmount } from 'vue'
   import { graphic, type EChartsOption } from '@/plugins/echarts'
   import { getCssVar, hexToRgba } from '@/utils/ui'
   import { useChartOps, useChartComponent } from '@/hooks/core/useChart'

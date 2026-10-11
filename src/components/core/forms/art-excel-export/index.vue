@@ -21,9 +21,9 @@
 <script setup lang="ts">
   import * as XLSX from 'xlsx'
   import FileSaver from 'file-saver'
-  import { ref, computed, nextTick } from 'vue'
+  import { ref, computed, nextTick,readonly } from 'vue'
   import { Loading } from '@element-plus/icons-vue'
-  import type { ButtonType } from 'element-plus'
+  import { ElMessage, type ButtonType } from 'element-plus'
   import { useThrottleFn } from '@vueuse/core'
 
   defineOptions({ name: 'ArtExcelExport' })

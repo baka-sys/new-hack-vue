@@ -62,6 +62,7 @@
   import { formatMenuTitle } from '@/utils/router'
   import { handleMenuJump } from '@/utils/navigation'
   import { useSettingStore } from '@/store/modules/setting'
+import { storeToRefs } from 'pinia'
 
   interface MenuTheme {
     iconColor?: string

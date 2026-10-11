@@ -12,6 +12,8 @@
 
 <script setup lang="ts">
   import { IframeRouteManager } from '@/router/core'
+import { onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
   defineOptions({ name: 'IframeView' })
 

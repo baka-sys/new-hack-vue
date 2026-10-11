@@ -141,6 +141,9 @@
   import SidebarSubmenu from './widget/SidebarSubmenu.vue'
   import { useCommon } from '@/hooks/core/useCommon'
   import { useWindowSize, useTimeoutFn } from '@vueuse/core'
+import { useRoute, useRouter } from 'vue-router'
+import { storeToRefs } from 'pinia'
+import { computed, ref, watch } from 'vue'
 
   defineOptions({ name: 'ArtSidebarMenu' })
 

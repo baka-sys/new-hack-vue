@@ -87,7 +87,9 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import type { FormInstance, FormRules } from 'element-plus'
+  import { ElMessage, type FormInstance, type FormRules } from 'element-plus'
+import { useRouter } from 'vue-router';
+import { computed, reactive, ref, watch } from 'vue';
 
   defineOptions({ name: 'Register' })
 

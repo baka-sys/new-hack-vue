@@ -59,6 +59,7 @@
   import { formatMenuTitle } from '@/utils/router'
   import { handleMenuJump } from '@/utils/navigation'
   import type { AppRouteRecord } from '@/types/router'
+import { useRoute } from 'vue-router'
 
   defineOptions({ name: 'ArtMixedMenu' })
 

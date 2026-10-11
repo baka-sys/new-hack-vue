@@ -51,6 +51,8 @@
     useTimeoutFn
   } from '@vueuse/core'
   import { useSettingStore } from '@/store/modules/setting'
+import { storeToRefs } from 'pinia';
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
   type ThemeType =
     | 'theme'

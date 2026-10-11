@@ -19,6 +19,7 @@
 <script setup lang="ts">
   import { useSettingStore } from '@/store/modules/setting'
   import { useCeremony } from '@/hooks/core/useCeremony'
+import { storeToRefs } from 'pinia';
 
   defineOptions({ name: 'ArtFestivalTextScroll' })
 

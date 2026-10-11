@@ -108,11 +108,13 @@
 
 <script setup lang="ts">
   import { Lock, Unlock } from '@element-plus/icons-vue'
-  import type { FormInstance, FormRules } from 'element-plus'
+  import { ElMessage, type FormInstance, type FormRules } from 'element-plus'
   import { useI18n } from 'vue-i18n'
   import CryptoJS from 'crypto-js'
   import { useUserStore } from '@/store/modules/user'
   import { mittBus } from '@/utils/sys'
+import { storeToRefs } from 'pinia'
+import { computed, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
 
   // 国际化
   const { t } = useI18n()

@@ -81,7 +81,7 @@
 </template>
 
 <script setup lang="ts">
-  import type { CSSProperties } from 'vue'
+  import { computed, onUnmounted, ref, type CSSProperties } from 'vue'
 
   defineOptions({ name: 'ArtMenuRight' })
 

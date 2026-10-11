@@ -37,6 +37,7 @@
   import ContainerSettings from './widget/ContainerSettings.vue'
   import BasicSettings from './widget/BasicSettings.vue'
   import SettingActions from './widget/SettingActions.vue'
+import { onMounted, onUnmounted } from 'vue'
 
   defineOptions({ name: 'ArtSettingsPanel' })
 

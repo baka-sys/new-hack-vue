@@ -47,7 +47,8 @@
 <script setup lang="ts">
 import { generateCardApi } from '@/api/customer'
 import { ROLE_LIST_DATA } from '@/mock/temp/formData'
-import type { FormInstance, FormRules } from 'element-plus'
+import { ElMessage, type FormInstance, type FormRules } from 'element-plus'
+import { computed, nextTick, reactive, ref, watch } from 'vue';
 
 interface Props {
   visible: boolean
